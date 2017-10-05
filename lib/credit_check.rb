@@ -16,16 +16,11 @@ class CreditCheck
     split_doubled.sum
     if split_doubled.sum % 10 == 0
      "valid"
-
     else
      "invalid"
     end
-
-
   end
-
-
 end
-num = 5541801923795240
+num = "5541801923795240"
 creditcheck = CreditCheck.new
 p creditcheck.validate(num)
